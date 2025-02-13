@@ -55,19 +55,19 @@ const Header = () => {
                 <nav id="colorlib-main-menu" role="navigation">
                     <ul>
                         <li className={isActive("/")}>
-                            <Link to="/">Home</Link>
+                            <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
                         </li>
                         <li className={isActive("/about/")}>
-                            <Link to="/about/">About</Link>
+                            <Link to="/about/" onClick={() => setIsOpen(false)}>About</Link>
                         </li>
                         <li className={isActive("/skills/")}>
-                            <Link to="/skills/">Skills</Link>
+                            <Link to="/skills/" onClick={() => setIsOpen(false)}>Skills</Link>
                         </li>
                         <li className={isActive("/projects/")}>
-                            <Link to="/projects/">Projects</Link>
+                            <Link to="/projects/" onClick={() => setIsOpen(false)}>Projects</Link>
                         </li>
                         <li className={isActive("/contact/")}>
-                            <Link to="/contact/">Contact</Link>
+                            <Link to="/contact/" onClick={() => setIsOpen(false)}>Contact</Link>
                         </li>
                     </ul>
                 </nav>
