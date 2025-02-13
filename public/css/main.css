@@ -1,0 +1,158 @@
+/* Default styles for sidebar */
+#colorlib-aside {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    background-color: transparent; /* Default background */
+}
+
+/* Show Sidebar when Open */
+#colorlib-aside.open {
+    transform: translateX(0);
+    background-color: rgb(245, 243, 243); /* Set background to white when open */
+}
+
+/* Sidebar always visible on large screens */
+@media (min-width: 992px) {
+    #colorlib-aside {
+        transform: translateX(0);
+        background-color: rgb(245, 243, 243); /* Ensure sidebar has a white background on large screens */
+    }
+}
+
+/* Toggle Button Active State */
+.colorlib-nav-toggle.active i {
+    transform: rotate(90deg);
+}
+
+
+/* For about */
+/* Initial state for the animated elements */
+.animate {
+    opacity: 0;
+    transform: translateY(50px); /* Start from below */
+    transition: all 1s ease-out;
+}
+
+/* Visible state after animation starts */
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide up to the normal position */
+}
+
+/* Animation for smooth fade-in for each element */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Project */
+body {
+    background-color: #333; /* Dark grey background */
+    color: #f4f4f4; /* Bright text color */
+    font-family: Arial, sans-serif;
+}
+
+.project-page-container {
+    display: flex;
+    justify-content: space-between; /* Align left (sidebar) and right (content) sections */
+    background-color: #333; /* Dark background */
+}
+
+.project-content {
+    width: 75%;
+    padding: 20px;
+    margin-left: 25%;
+    background-color: #444; /* Dark content background */
+}
+
+.project-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff; /* Bright heading */
+}
+
+/* Grid Layout: Two projects per row */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+}
+
+/* Styling for project items */
+.project-item {
+    background: #5a5959; /* Light grey background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Softer shadow with lighter color */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    color: #333; /* Dark grey text for contrast */
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow on hover */
+}
+
+.project-item img {
+    width: 100%; /* Ensure image takes full width of the item */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Ensure the image is cropped to fit the container */
+    border-radius: 10px;
+}
+
+.project-item h4 {
+    font-weight: bold;
+    background-color: #f3ebdf;
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Links */
+.project-links {
+    margin-top: 10px;
+}
+
+.project-links a {
+    display: inline-block;
+    background-color: #ff9f00;
+    color: #fff;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-links a:hover {
+    background-color: #e88e00;
+}
+
+/* Mobile responsive: Stack projects vertically on smaller screens */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Stack projects vertically on mobile */
+    }
+
+    .project-content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/* nav active */
+.colorlib-active {
+    color: red !important; /* Highlight active link */
+    font-weight: bold;
+}
