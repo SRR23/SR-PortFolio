@@ -49,7 +49,7 @@ const Header = () => {
                 className={`js-fullheight text-center ${isOpen ? "open" : ""}`}
             >
                 <h1 id="colorlib-logo">
-                    <Link to="/">SRR<span>.</span></Link>
+                    <Link to="/" onClick={() => setIsOpen(false)}>SRR<span>.</span></Link>
                 </h1>
 
                 <nav id="colorlib-main-menu" role="navigation">
