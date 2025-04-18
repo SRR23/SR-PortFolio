@@ -82,7 +82,7 @@ const Header = () => {
                         <li><a href="https://www.facebook.com/saidurrahman.rimon?mibextid=ZbWKwL"><i className="icon-facebook"></i></a></li>
                         <li><a href="https://wa.link/19gx1s"><i className="icon-whatsapp"></i></a></li>
                         <li><a href="https://github.com/SRR23"><i className="icon-github"></i></a></li>
-                        <li><a href="www.linkedin.com/in/shaidur-rahman-09475b2b3"><i className="icon-linkedin"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/shaidur-rahman-09475b2b3"><i className="icon-linkedin"></i></a></li>
                     </ul>
                 </div>
             </aside>
