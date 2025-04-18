@@ -12,19 +12,19 @@ const projects = [
     },
     {
         id: 2,
+        title: "EasyRent-Kushtia",
+        img: "/images/easyrent.png",
+        description: "Description of the third project.",
+        liveLink: "https://easyrent-kushtia.netlify.app/",
+        githubLink: "https://github.com/SRR23/Flat-Rent-API.git",
+    },
+    {
+        id: 3,
         title: "Yummy Foods",
         img: "/images/recipe.png",
         description: "Description of the second project.",
         liveLink: "https://srr23.github.io/Recipe_Website_FrontEnd/index.html",
         githubLink: "https://github.com/SRR23/Recipe_Website_API.git",
-    },
-    {
-        id: 3,
-        title: "EasyRent-Kushtia",
-        img: "/images/easyrent.png",
-        description: "Description of the third project.",
-        liveLink: "https://easyrent-kushtia.netlify.app/",
-        githubLink: "https://github.com/SRR23/Flat-Rent-FrontEnd.git",
     },
     {
         id: 4,
