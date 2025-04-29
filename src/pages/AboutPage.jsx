@@ -83,8 +83,8 @@ const AboutPage = () => {
 
               {/* Additional Details */}
               <p className="animate" style={{ color: "#ddd" }}>
-                💼 Completed a 3 months paid internship **Full Stack Development Intern
-                (Remote)**. <br />
+                {/* 💼 Completed a 3 months paid internship **Full Stack Development Intern
+                (Remote)**. <br /> */}
                 🎓 Pursuing a **B.Sc.(Engg.) in ICT** at **Islamic University,
                 Bangladesh**. <br />
                 💡 Experienced in **API development, authentication, and
